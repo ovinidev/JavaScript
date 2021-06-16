@@ -40,7 +40,7 @@ const pessoas = [
 const maisVelha = pessoas.reduce((contador, obj) => {
   if(contador.idade > obj.idade) return contador;
 
-  return obj; //else
+  return obj; // else
 });
 
 console.log(maisVelha);
