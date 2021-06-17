@@ -11,7 +11,7 @@ sudo apt install flameshot
 echo -e "${BLUE}> [instalation] Installing VS Code${RESET}";
 sudo apt-get install code
 
-echo -e "${BLUE}> [instalation] Installing snapd for spotify${RESET}";
+echo -e "${BLUE}> [instalation] Installing snapd${RESET}";
 sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt install snapd
 
