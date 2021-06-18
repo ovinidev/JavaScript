@@ -31,7 +31,7 @@ wait("Frase 1", random(1, 3))
   })
   })
   }).catch(e => {
-    console.log("ERRO", e);
+    console.log("ERROR", e);
   });
 
 
@@ -45,8 +45,8 @@ const promises = [
 ];
 
 
-Promise.all(promises)
-.then((valor) => {
+Promise.all(promises) // Resolve tudo
+  .then((valor) => {
     console.log("Rodando o all");
     console.log(valor);
   })
@@ -55,7 +55,7 @@ Promise.all(promises)
   })
 
   
-  Promise.race(promises)
+Promise.race(promises) // Resolve a mais rápida
   .then((valor) => {
     console.log("Rodando o race");
     console.log(valor);
