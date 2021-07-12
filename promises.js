@@ -22,7 +22,7 @@ function random(min, max) {
 wait("Frase 1", random(1, 3))
   .then(resposta => {
     console.log(resposta);
-    return wait("Frase 2", random(1, 3))
+    return wait("Frase 2", random(1, 5))
   .then(resposta => {
     console.log(resposta);
     return wait("Frase 3", random(1, 3))

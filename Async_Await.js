@@ -1,4 +1,4 @@
-function random(min = 0, max = 0) {
+function random(min = 0, max = 5) {
   min *= 1000;
   max *= 1000;
   return Math.floor(Math.random() * (max - min) + min);
@@ -32,7 +32,7 @@ function espera(msg, tempo) {
 //   })
 //   .catch(e => console.log(e));
 
-//Async / Awayt
+//Async / Await
 
 async function executa() {
   try {

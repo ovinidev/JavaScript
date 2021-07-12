@@ -1,12 +1,13 @@
 // map sempre retorna um array com a mesma quantidade de elementos.
 // retornar o obj com um obj diferente
 
-// Dobre os números
+// Dobrando os números
 
-const numeros = [5, 50, 80, 1, 6, 5, 4, 9, 6, 10, 30, 90, 70, 50, 20];
+const numeros = [6, 10, 30, 90, 70, 50, 20];
 
-const numerosDobro = numeros.map((obj, indice, array) => obj * 2
-);
+const numerosDobro = numeros.map(function(obj, indice, array){
+  return obj * 2
+})
 
 console.log(numerosDobro);
 
@@ -16,20 +17,23 @@ console.log(numerosDobro);
 // Retorne apenas uma string com o nome da pessoa
 // Remova apenas a chave "nome" do objeto
 // Adicione uma chave id em cada objeto
+
+
+
 const pessoas = [
-  { nome: "Luiz", idade: 62 },
-  { nome: "Vinia", idade: 12 },
-  { nome: "Ralph", idade: 52 },
-  { nome: "Messiano", idade: 40 },
-  { nome: "Taylera", idade: 19 },
-  { nome: "Drugsysh", idade: 60 },
+  { name: "Fill", age: 62 },
+  { name: "John", age: 12 },
+  { name: "Ralph", age: 52 },
+  { name: "Jake", age: 40 },
+  { name: "Tay", age: 19 },
+  { name: "Dac", age: 60 },
 ];
 
-const nomes = pessoas.map(obj => obj.nome);
+const nomes = pessoas.map(obj => obj.name);
 
 console.log(nomes);
 
-const onlyIdade = pessoas.map(obj => ({ idade: obj.idade }));
+const onlyIdade = pessoas.map(obj => ({ age: obj.age }));
 
 console.log(onlyIdade);
 
