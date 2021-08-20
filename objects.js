@@ -13,3 +13,5 @@ const { nome } = pessoas;
 console.log(nome);
 
 const { idade } = pessoas;
+
+console.log(idade);

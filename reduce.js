@@ -24,9 +24,6 @@ const numerosDobro = numeros.reduce((contador, obj) => {
 
 console.log(numerosDobro);
 
-
-
-
 // Retorne a pessoa mais velha
 const pessoas = [
   { nome: "Luiz", idade: 62 },

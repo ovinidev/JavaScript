@@ -1,11 +1,11 @@
 // Declaração de função (function hoisting)
 function falaOi(){
-  console.log("Oi");
+  console.log("Function hoisting");
 }
 
 // First-class objects (Objetos de primeira classe)
 const falaXau = function(){
-  console.log("xau")
+  console.log("First-class")
 }
 
 // Arrow function

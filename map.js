@@ -3,13 +3,13 @@
 
 // Dobrando os números
 
-const numeros = [6, 10, 30, 90, 70, 50, 20];
+const numbers = [6, 10, 30, 90, 70, 50, 20];
 
-const numerosDobro = numeros.map(function(obj, indice, array){
-  return obj * 2
+const doubleNumbers = numbers.map(function(obj, indice, array){
+  return obj;
 })
 
-console.log(numerosDobro);
+console.log(doubleNumbers);
 
 
 
@@ -20,7 +20,7 @@ console.log(numerosDobro);
 
 
 
-const pessoas = [
+const group = [
   { name: "Fill", age: 62 },
   { name: "John", age: 12 },
   { name: "Ralph", age: 52 },
@@ -29,15 +29,17 @@ const pessoas = [
   { name: "Dac", age: 60 },
 ];
 
-const nomes = pessoas.map(obj => obj.name);
+const names = group.map(obj => obj.name);
 
-console.log(nomes);
+console.log(names);
 
-const onlyIdade = pessoas.map(obj => ({ age: obj.age }));
+const onlyAge = group.map(obj => {
+  if (obj.age > 0) return obj.age;
+});
 
-console.log(onlyIdade);
+console.log(onlyAge);
 
-const addId = pessoas.map((obj, indice) => {
+const addId = group.map((obj, indice) => {
   obj.id = (indice + 1) * 1000;
   return obj;
 });
